@@ -86,7 +86,7 @@ Citizen.CreateThread(function()
 		name="MDNPC REVIVE",
 		minZ = 41.98,
 		maxZ = 45.98,
-		debugPoly=true
+		debugPoly=false
 	  })
     local insidePinkCage = false
 	mdBoxZone:onPointInOut(PolyZone.getPlayerPosition, function(isPointInside, point)
@@ -108,7 +108,7 @@ Citizen.CreateThread(function()
   		name="MDPalletoNPC",
   		minZ = 29.99,
   		maxZ = 37.13,
-		debugPoly=true
+		debugPoly=false
 	})
     mdPaletoZone:onPointInOut(PolyZone.getPlayerPosition, function(isPointInside, point)
 		if isPointInside and intheHospitalWay then
